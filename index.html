@@ -21,7 +21,7 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 100px 100px 100px 100px 100px;
       gap: 10px;
-      background-color: rgb(155, 153, 153);
+      background-color: rgb(206, 202, 202);
       padding: 10px;
       border-radius: 2px;
     }
@@ -33,10 +33,11 @@
       justify-content: center;
       align-items: center;
       font-size: 20px;
+      padding: 1px;
       
 
     }
-
+    /* 特殊标识 */
     .item1 {
       grid-column: 1 ;
       
@@ -59,6 +60,16 @@
       grid-row: 4;
       /* 在第3行 */
       background-color: #f39c12;
+    }
+
+    /* 悬浮效果 */
+    .grid-item:hover{
+      /* 上移 */
+      transform: translateY(-10px);
+      /* 光标改变 */
+      cursor: pointer;
+      /* 阴影 */
+      text-shadow: 0 10px 20px - rgba(0, 0, 0, 0.625);
     }
   </style>
 </head>
